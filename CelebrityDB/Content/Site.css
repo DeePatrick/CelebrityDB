@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background:rgba(0, 0, 0, 0.80);
+    color:white;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -22,3 +25,91 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.jumbotron {
+    background-color:aliceblue;
+}
+.navbar-inverse {
+    background-color: #ff4342;
+    border-color: #ff4342;
+    font-size:xx-large
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    font-size:x-large
+}
+.navbar > .container .navbar-brand {
+    margin-left: 15px;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size:xx-large
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: rgba(205, 40, 39, 0.55);
+}
+
+.dropdown-menu {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+}
+
+.navbar-brand {
+    font-weight: 600;    
+}
+
+.wrapper_inside {
+    margin: auto;
+    width: 800px;
+    background-color: rgba(255, 67, 66, 0.49);
+    font-size:x-large;
+    font-weight: 600; 
+}
+
+.wrapper{
+    margin: auto;
+    width: 800px;
+    font-size:larger;
+    font-weight: 600; 
+}
+
+/*ANIMATION CSS KEYRAMING*/
+
+
+/*// ELEMENTS TO ANIMATE //*/
+
+.actor{
+    position:absolute;
+    top:500px;
+    left:400px;
+    animation-name: glide;
+    animation-duration: 5s;
+    animation-fill-mode:both;
+    //animation-iteration-count:infinite;
+
+}
+
+
+/*// KEYFRAMES //*/
+
+@keyframes glide{
+    from{ transform: translateX(-200px)}
+    to{ transform: translateX(1000px)}
+}
+
+
+@-moz-keyframes{
+
+}
+@-webkit-keyframes{
+
+}
+
+

@@ -1,0 +1,91 @@
+﻿@model CelebrityDB.Models.Celebrity
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="wrapper">
+    <h4>About </h4><h3>@Model.StageName</h3>
+    <hr />
+    <div class="bounce">
+        <img class="img-circle" width="150" height="150" src="data:image;base64,@System.Convert.ToBase64String(@Model.EmployeePicture)" />
+        @Html.DisplayFor(model => model.RealName)
+    </div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StageName):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StageName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Race):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Race)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AgeCategory):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AgeCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BodyShape):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BodyShape)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HeightCategory):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HeightCategory)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Hobbies):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Hobbies)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quotes):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quotes)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gender):
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dd class="actor">
+            <img class="img-rounded" height="600" src="data:image;base64,@System.Convert.ToBase64String(@Model.EmployeeFullPicture)" />
+        </dd>
+    </dl>
+
+</div>
+
+<div class="panel-footer">
+    <a class='btn btn-danger' @Html.ActionLink("Back", "Index")</a>
+</div>
+
+
